@@ -1,0 +1,1402 @@
+/*******************************/
+/********* General CSS *********/
+/*******************************/
+body {
+    color: #797979;
+    background: #F0F4F5;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1,
+h2, 
+h3, 
+h4,
+h5, 
+h6 {
+    color: #343148;
+}
+
+a {
+    color: #454545;
+    transition: .3s;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #F0F4F5;
+    outline: none;
+    text-decoration: none;
+}
+
+.btn:focus,
+.form-control:focus {
+    box-shadow: none;
+}
+
+.container-fluid {
+    max-width: 1366px;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    background: #89dee2;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 1;
+    font-size: 22px;
+    right: 15px;
+    bottom: 15px;
+    transition: background 0.5s;
+    z-index: 9;
+}
+
+.back-to-top:hover {
+    background: #343148;
+}
+
+.back-to-top:hover i {
+    color: #F7CAC9;
+}
+
+.back-to-top i {
+    color: #343148;
+    padding-top: 10px;
+}
+
+
+
+
+/**********************************/
+/*********** Nav Bar CSS **********/
+/**********************************/
+.navbar {
+    position: relative;
+    transition: .5s;
+    z-index: 999;
+}
+
+.navbar.nav-sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+}
+
+.navbar .navbar-brand {
+    margin: 0;
+    color: #ffffff;
+    font-size: 45px;
+    line-height: 0px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: .5s;
+}
+
+.navbar .navbar-brand span {
+    color: #89dee2;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.navbar.nav-sticky .navbar-brand span {
+    color: #ffffff;
+}
+
+.navbar .navbar-brand img {
+    max-width: 100%;
+    max-height: 40px;
+}
+
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    padding: 10px 10px 8px 10px;
+    color: #ffffff;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    background: rgba(256, 256, 256, .1);
+    transition: none;
+}
+
+.navbar .dropdown-menu {
+    margin-top: 0;
+    border: 0;
+    border-radius: 0;
+    background: #f8f9fa;
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        position: absolute;
+        width: 100%;
+        top: 0px;
+        padding: 20px 60px;
+        background: rgba(0, 0, 0, .1) !important;
+        z-index: 9;
+    }
+    
+    .navbar.nav-sticky {
+        padding: 10px 60px;
+        background: #343148 !important;
+    }
+    
+    .navbar a.nav-link {
+        padding: 8px 15px;
+        font-size: 14px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+}
+
+@media (max-width: 991.98px) {   
+    .navbar {
+        padding: 15px;
+        background: #343148 !important;
+    }
+    
+    .navbar .navbar-brand span {
+        color: #ffffff;
+    }
+    
+    .navbar a.nav-link {
+        padding: 5px;
+    }
+    
+    .navbar .dropdown-menu {
+        box-shadow: none;
+    }
+}
+
+
+/*******************************/
+/********** Hero CSS ***********/
+/*******************************/
+.hero {
+    position: relative;
+    width: 100%;
+    margin-bottom: 45px;
+    padding: 150px 0;
+    background: #09425A;
+    overflow: hidden;
+}
+
+.hero .container-fluid {
+    padding: 0;
+}
+
+.hero .hero-image {
+    position: relative;
+    text-align: right;
+    opacity: 0.85;
+}
+
+.hero .hero-image img {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 0.5%;
+}
+
+.hero .hero-text {
+    position: relative;
+    padding-left: 75px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero .hero-text h1 {
+    color: #F0F4F5;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero .hero-text p {
+    color: #F0F4F5;
+    font-size: 18px;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+.hero .hero-btn .btn {
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #89dee2;
+    background: #343148;
+    border-radius: 0;
+    transition: .3s;
+}
+
+.hero .hero-btn .btn:hover {
+    color: #343148;
+    background: #ffffff;
+}
+
+.hero .hero-btn .btn:first-child {
+    margin-right: 10px;
+}
+
+@media (max-width: 991.98px) {
+    .hero .hero-text {
+        padding: 0 15px;
+    }
+    
+    .hero .hero-text h1 {
+        font-size: 35px;
+    }
+    
+    .hero .hero-text p {
+        font-size: 16px;
+    }
+    
+    .hero .hero-text .btn {
+        padding: 12px 30px;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero .hero-text h1 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+    
+    .hero .hero-text p {
+        font-size: 14px;
+    }
+    
+    .hero .hero-text .btn {
+        padding: 10px 15px;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .hero .hero-text h1 {
+        font-size: 25px;
+        font-weight: 600;
+    }
+    
+    .hero .hero-text p {
+        font-size: 14px;
+    }
+    
+    .hero .hero-text .btn {
+        padding: 8px 10px;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 0;
+    }
+}
+
+
+/*******************************/
+/******* Page Header CSS *******/
+/*******************************/
+.page-header {
+    position: relative;
+    margin-bottom: 45px;
+    padding: 150px 0 90px 0;
+    text-align: center;
+    background: #09425A;
+}
+
+.page-header h2 {
+    position: relative;
+    color: #F0F4F5;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.page-header a {
+    position: relative;
+    padding: 0 12px;
+    font-size: 22px;
+    color: #F0F4F5;
+}
+
+.page-header a:hover {
+    color: #343148;
+}
+
+.page-header a::after {
+    position: absolute;
+    content: "/";
+    width: 8px;
+    height: 8px;
+    top: -2px;
+    right: -7px;
+    text-align: center;
+    color: #343148;
+}
+
+.page-header a:last-child::after {
+    display: none;
+}
+
+@media (max-width: 767.98px) {
+    .page-header h2 {
+        font-size: 35px;
+    }
+    
+    .page-header a {
+        font-size: 18px;
+    }
+}
+
+
+/*******************************/
+/******* Section Header ********/
+/*******************************/
+.section-header {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+}
+
+.section-header p {
+    display: inline-block;
+    margin: 0 30px;
+    margin-bottom: 5px;
+    padding: 0 10px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    background: #ffffff;
+}
+
+.section-header p::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    top: 11px;
+    right: -30px;
+    left: -30px;
+    background: #89dee2;
+    z-index: -1;
+}
+
+.section-header h2 {
+    margin: 0;
+    position: relative;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+@media (max-width: 767.98px) {
+    .section-header h2 {
+        font-size: 30px;
+    }
+}
+
+
+/*******************************/
+/********** Definisi CSS **********/
+/*******************************/
+.definisi {
+    position: relative;
+    width: 100%;
+    padding: 45px 0;
+}
+
+.definisi .section-header {
+    margin-bottom: 30px;
+    margin-left: 0;
+}
+
+.definisi .definisi-img {
+    position: relative;
+    height: 100%;
+    padding: 15px 15px;
+}
+
+.definisi .definisi-img img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5%;
+}
+
+.definisi .definisi-text p {
+    font-size: 16px;
+    text-align: justify;
+}
+
+.definisi .definisi-text a.btn {
+    position: relative;
+    margin-top: 15px;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #89dee2;
+    background: #343148;
+    border-radius: 0;
+    transition: .3s;
+}
+
+.definisi .definisi-text a.btn:hover {
+    color: #343148;
+    background: #DDDDDD;
+}
+
+@media (max-width: 767.98px) {
+    .definisi .definisi-img {
+        margin-bottom: 30px;
+        height: auto;
+    }
+}
+
+/*******************************/
+/********* Faktor CSS *********/
+/*******************************/
+
+.faktor {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 15px 0;
+}
+
+.faktor .faktor-item {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 30px;
+    border: 1px solid rgba(0, 0, 0, .07);
+    transition: .3s;
+}
+
+.faktor .faktor-item:hover,
+.faktor .faktor-item.active {
+    background: #343148;
+    color: #ffffff;
+}
+
+.faktor .faktor-icon {
+    position: relative;
+    margin: 0 auto 25px auto;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.faktor .faktor-icon i {
+    position: relative;
+    font-size: 50px;
+    color: #343148;
+    z-index: 3;
+}
+
+.faktor .faktor-icon:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: #89dee2;
+    border-radius: 50%;
+    animation: pulse-border 2000ms ease-out infinite;
+}
+
+.faktor .faktor-icon:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: #89dee2;
+    border-radius: 50%;
+    transition: all 200ms;
+}
+
+@keyframes pulse-border {
+    0% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.3);
+        opacity: 0;
+    }
+}
+
+.faktor .faktor-item h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.faktor .faktor-item:hover h3,
+.faktor .faktor-item.active h3 {
+    color: #89dee2;
+}
+
+.faktor .faktor-item p {
+    margin: 0;
+    font-size: 16px;
+}
+
+
+/*******************************/
+/********* Gejala CSS *********/
+/*******************************/
+
+.gejala {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 15px 0;
+}
+
+.gejala .section-header {
+    margin-bottom: 30px;
+    margin-left: 0;
+}
+
+.gejala .gejala-img {
+    position: relative;
+    height: 100%;
+    padding: 15px 15px;
+}
+
+.gejala .gejala-img img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gejala .gejala-text p {
+    font-size: 16px;
+    text-align: justify;
+}
+
+@media (max-width: 767.98px) {
+    .gejala .gejala-img {
+        margin-bottom: 30px;
+        height: auto;
+    }
+}
+
+/*******************************/
+/********* Pencegahan Index CSS *********/
+/*******************************/
+
+.pencegahan-in {
+    position: relative;
+    width: 100%;
+    padding: 45px 0;
+}
+
+.pencegahan-in .section-header {
+    margin-bottom: 30px;
+    margin-left: 0;
+}
+
+.pencegahan-in .pencegahan-in-img {
+    position: relative;
+    height: 100%;
+}
+
+.pencegahan-in .pencegahan-in-img img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5%;
+}
+
+.pencegahan-in .pencegahan-in-text p {
+    font-size: 16px;
+    text-align: justify;
+}
+
+.pencegahan-in .pencegahan-in-text a.btn {
+    position: relative;
+    margin-top: 15px;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #89dee2;
+    background: #343148;
+    border-radius: 0;
+    transition: .3s;
+    float: right;
+}
+
+.pencegahan-in .pencegahan-in-text a.btn:hover {
+    color: #343148;
+    background: #DDDDDD;
+}
+
+@media (max-width: 767.98px) {
+    .pencegahan-in .pencegahan-in-img {
+        margin-bottom: 30px;
+        height: auto;
+    }
+}
+
+/*******************************/
+/********* Pengobatan Index CSS *********/
+/*******************************/
+
+.pengobatan-in {
+    position: relative;
+    width: 100%;
+    padding: 45px 0;
+}
+
+.pengobatan-in .section-header {
+    margin-bottom: 30px;
+    margin-left: 0;
+}
+
+.pengobatan-in .pengobatan-in-img {
+    position: relative;
+    height: 100%;
+}
+
+.pengobatan-in .pengobatan-in-img img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5%;
+}
+
+.pengobatan-in .pengobatan-in-text p {
+    font-size: 16px;
+    text-align: justify;
+}
+
+.pengobatan-in .pengobatan-in-text a.btn {
+    position: relative;
+    margin-top: 15px;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #89dee2;
+    background: #343148;
+    border-radius: 0;
+    transition: .3s;
+}
+
+.pengobatan-in .pengobatan-in-text a.btn:hover {
+    color: #343148;
+    background: #DDDDDD;
+}
+
+@media (max-width: 767.98px) {
+    .pengobatan-in .pengobatan-in-img {
+        margin-bottom: 30px;
+        height: auto;
+    }
+}
+
+
+/*******************************/
+/******** Portfolio CSS ********/
+/*******************************/
+.portfolio {
+    position: relative;
+    padding: 45px 0 15px 0;
+}
+
+.portfolio #portfolio-filter {
+    padding: 0;
+    margin: -15px 0 25px 0;
+    list-style: none;
+    font-size: 0;
+    text-align: center;
+}
+
+.portfolio #portfolio-filter li {
+    cursor: pointer;
+    display: inline-block;
+    margin: 5px;
+    padding: 6px 12px;
+    color: #343148;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 0;
+    background: none;
+    border: 1px solid #343148;
+    transition: .3s;
+}
+
+.portfolio #portfolio-filter li:hover,
+.portfolio #portfolio-filter li.filter-active {
+    background: #343148;
+    color: #F7CAC9;
+}
+
+.portfolio .portfolio-item {
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.portfolio .portfolio-wrap {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.portfolio img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.portfolio .portfolio-wrap:hover img {
+    transform: rotate(5deg) scale(1.12);
+}
+
+
+/*******************************/
+/******* Grade CSS *******/
+/*******************************/
+
+.grade {
+    position: relative;
+    padding: 45px 0;
+}
+
+.grade .container {
+    padding: 0;
+}
+
+.grade .grade-item {
+    position: relative;
+    margin: 0 15px;
+    text-align: center;
+}
+
+.grade .grade-img {
+    position: relative;
+    margin-bottom: 15px;
+    z-index: 1;
+}
+
+.grade .grade-item img {
+    margin: 0 auto;
+    width: 120px;
+    padding: 13px;
+    border-radius: 100px;
+    border: 1px solid rgba(0, 0, 0, .07);
+    background: #ffffff;
+    transition: .5s;
+}
+
+.grade .grade-text {
+    position: relative;
+    margin-top: -70px;
+    padding: 75px 25px 25px 25px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, .07);
+}
+
+.grade .grade-item p {
+    font-size: 16px;
+    color: #666666;
+}
+
+.grade .grade-text h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.grade .grade-text h4 {
+    color: #666666;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.grade .owl-item.center img {
+    border-color: transparent;
+}
+
+.grade .owl-item.center .grade-text {
+    background: #343148;
+}
+
+.grade .owl-item.center .grade-text h3 {
+    color: #89dee2;
+}
+
+.grade .owl-item.center .grade-text p,
+.grade .owl-item.center .grade-text h4 {
+    color: #ffffff;
+}
+
+.grade .owl-dots {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.grade .owl-dot {
+    display: inline-block;
+    margin: 0 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #89dee2;
+}
+
+.grade .owl-dot.active {
+    background: #343148;
+}
+
+
+/*******************************/
+/********** pencegahan CSS **********/
+/*******************************/
+.pencegahan {
+    position: relative;
+    padding: 45px 0 15px 0;
+}
+
+.pencegahan #pencegahan-filter {
+    padding: 0;
+    margin: -15px 0 25px 0;
+    list-style: none;
+    font-size: 0;
+    text-align: center;
+}
+
+.pencegahan #pencegahan-filter li {
+    cursor: pointer;
+    display: inline-block;
+    margin: 5px;
+    padding: 6px 12px;
+    color: #343148;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 0;
+    background: none;
+    border: 1px solid #343148;
+    transition: .3s;
+}
+
+.pencegahan #pencegahan-filter li:hover,
+.pencegahan #pencegahan-filter li.filter-active {
+    background: #343148;
+    color: #89dee2;
+}
+
+.pencegahan .pencegahan-item {
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.pencegahan .pencegahan-wrap {
+    position: relative;
+    width: 100%;
+}
+
+.pencegahan .pencegahan-img {
+    position: relative;
+}
+
+.pencegahan .pencegahan-img img {
+    position: relative;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+}
+
+.pencegahan .pencegahan-text {
+    position: relative;
+    padding: 30px 30px 25px 30px;
+    border-right: 1px solid rgba(0, 0, 0, .07);
+    border-bottom: 1px solid rgba(0, 0, 0, .07);
+    border-left: 1px solid rgba(0, 0, 0, .07);
+}
+
+.pencegahan .pencegahan-text h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.pencegahan .pencegahan-teacher {
+    position: relative;
+    height: 40px;
+    margin-top: -50px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    border-radius: 40px;
+}
+
+.pencegahan .pencegahan-teacher img {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background: #89dee2;
+}
+
+.pencegahan .pencegahan-teacher h3 {
+    width: calc(100% - 95px);
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 0 0 15px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.pencegahan .pencegahan-teacher a {
+    width: 40px;
+    height: 40px;
+    padding: 0 0 3px 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 100;
+    color: #343148;
+    background: #89dee2;
+    border-radius: 40px;
+    transition: .3s;
+}
+
+.pencegahan .pencegahan-wrap:hover .pencegahan-teacher a {
+    color: #89dee2;
+    background: #343148;
+}
+
+.pencegahan .pencegahan-meta {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.pencegahan .pencegahan-meta p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.pencegahan .pencegahan-meta p i {
+    margin-right: 5px;
+    color: #343148;
+}
+
+.pencegahan .pencegahan-meta p:first-child {
+    margin-right: 10px;
+}
+
+.pencegahan .pencegahan-open p {
+    margin-top: 25px;
+    margin-bottom: 50px;
+    text-align: justify;
+    color: #454545;
+}
+
+
+
+/*******************************/
+/********* Quote CSS *********/
+/*******************************/
+.quote {
+    position: relative;
+    width: 100%;
+    margin: 45px 0;
+    padding: 105px 0;
+    background: linear-gradient(rgba(201, 221, 247, 0.7), rgb(220, 231, 238)), url(../img/bg-full.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.quote .container {
+    max-width: 750px;
+    text-align: center;
+}
+
+.quote .section-header {
+    margin-bottom: 20px;
+}
+
+.quote .section-header p {
+    color: #343148;
+    background: transparent;
+}
+
+.quote .section-header p::after {
+    display: none;
+}
+
+.quote .quote-text p {
+    color: #454545;
+}
+
+.quote .quote-text .btn {
+    margin-top: 10px;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #89dee2;
+    background: #343148;
+    border-radius: 0;
+    transition: .3s;
+}
+
+.quote .quote-text .btn:hover {
+    color: #343148;
+    background: #ffffff;
+}
+
+/*******************************/
+/********* Pengobatan CSS *********/
+/*******************************/
+
+.pengobatan {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 15px 0;
+}
+
+.pengobatan .section-header {
+    margin-bottom: 30px;
+    margin-left: 0;
+}
+
+.pengobatan .pengobatan-img {
+    position: relative;
+    height: 100%;
+    padding: 15px 15px;
+}
+
+.pengobatan .pengobatan-img img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pengobatan .pengobatan-text p {
+    font-size: 16px;
+    text-align: justify;
+}
+
+.pengobatan .pengobatan-text p span {
+    color: #454545;
+    font-weight: bold;
+}
+
+@media (max-width: 767.98px) {
+    .pengobatan .pengobatan-img {
+        margin-bottom: 30px;
+        height: auto;
+    }
+}
+
+
+/*******************************/
+/*********** Tentang CSS **********/
+/*******************************/
+.tentang {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 15px 0;
+}
+
+.tentang .kecil {
+    padding: 15px 15px;
+    float: none;
+}
+
+.tentang .intro p {
+    color: #454545;
+    text-align: justify;
+    margin: 0 auto;
+    padding: 25px 25px;
+    width: 60%;
+}
+
+.tentang .tentang-item {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 15px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, .07);
+}
+
+.tentang .tentang-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.tentang .tentang-img img {
+    position: relative;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.tentang .tentang-social {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+
+.tentang .tentang-social a {
+    position: relative;
+    margin: 0 3px;
+    margin-top: 100px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #89dee2;
+    background: #343148;
+    opacity: 0;
+}
+
+.tentang .tentang-social a:hover {
+    color: #343148;
+    background: #89dee2;
+}
+
+
+.tentang .tentang-item:hover .tentang-social {
+    background: rgba(256, 256, 256, .5);
+}
+
+.tentang .tentang-item:hover .tentang-social a:first-child {
+    opacity: 1;
+    margin-top: 0;
+    transition: .3s 0s;
+}
+
+.tentang .tentang-item:hover .tentang-social a:nth-child(2) {
+    opacity: 1;
+    margin-top: 0;
+    transition: .3s .1s;
+}
+
+.tentang .tentang-item:hover .tentang-social a:nth-child(3) {
+    opacity: 1;
+    margin-top: 0;
+    transition: .3s .2s;
+}
+
+.tentang .tentang-item:hover .tentang-social a:nth-child(4) {
+    opacity: 1;
+    margin-top: 0;
+    transition: .3s .3s;
+}
+
+.tentang .tentang-text {
+    position: relative;
+    padding: 25px 15px 10px 15px;
+    text-align: center;
+    background: #ffffff;
+}
+
+.tentang .tentang-text h2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.tentang .tentang-text p {
+    margin: 0;
+}
+
+
+/*******************************/
+/********* Footer CSS **********/
+/*******************************/
+.footer {
+    position: relative;
+    margin-top: 45px;
+    background: #343148;
+}
+
+.footer .container-fluid {
+    padding: 90px 0 0 0;
+    background: linear-gradient(rgba(52, 49, 72, .9), rgba(52, 49, 72, .9)), url(../img/footer-bg-hnp.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.footer .footer-info {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.footer .footer-info .footer-logo {
+    display: inline-block;
+    color: #89dee2;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 45px;
+}
+
+.footer .footer-info .footer-logo span {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.footer .footer-info h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.footer .footer-menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .footer-menu p {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 0 10px;
+    border-right: 1px solid #ffffff;
+}
+
+.footer .footer-menu p:last-child {
+    border: none;
+}
+
+.footer .footer-page {
+    position: relative;
+    margin-top: 5px;
+}
+
+.footer .footer-page a {
+    display: inline-block;
+}
+
+.footer .footer-page a i {
+    margin-right: 15px;
+    font-size: 20px;
+    color: #ffffff;
+    transition: .3s;
+}
+
+.footer .footer-page a:last-child i {
+    margin: 0;
+}
+
+.footer .footer-page a:hover i {
+    color: #89dee2;
+}
+
+.footer .footer-social {
+    position: relative;
+    margin-top: 5px;
+}
+
+.footer .footer-social a {
+    display: inline-block;
+}
+
+.footer .footer-social a i {
+    margin-right: 15px;
+    font-size: 20px;
+    color: #ffffff;
+    transition: .3s;
+}
+
+.footer .footer-social a:last-child i {
+    margin: 0;
+}
+
+.footer .footer-social a:hover i {
+    color: #89dee2;
+}
+
+.footer .copyright {
+    margin-top: 60px;
+    padding: 0 30px;
+}
+
+.footer .copyright .row {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-top: 1px solid rgba(256, 256, 256, .1);
+}
+
+.footer .copyright p {
+    margin: 0;
+    color: #ffffff;
+}
+
+.footer .copyright .col-md-6:last-child p {
+    text-align: right;
+}
+
+.footer .copyright p a {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.footer .copyright p a:hover {
+    color: #89dee2;
+}
+
+@media (max-width: 767.98px) {
+    .footer .copyright p,
+    .footer .copyright .col-md-6:last-child p {
+        margin: 5px 0;
+        text-align: center;
+    }
+}

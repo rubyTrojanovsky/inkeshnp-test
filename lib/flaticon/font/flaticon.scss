@@ -1,0 +1,41 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?914a2b424d1e4e3f18fd0643a9b19886") format("truetype"),
+url("./flaticon.woff?914a2b424d1e4e3f18fd0643a9b19886") format("woff"),
+url("./flaticon.woff2?914a2b424d1e4e3f18fd0643a9b19886") format("woff2"),
+url("./flaticon.eot?914a2b424d1e4e3f18fd0643a9b19886#iefix") format("embedded-opentype"),
+url("./flaticon.svg?914a2b424d1e4e3f18fd0643a9b19886#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "growing-up": "\f101",
+    "sad": "\f102",
+    "work": "\f103",
+    "lavatory": "\f104",
+);
+
+.flaticon-growing-up:before {
+    content: map-get($flaticon-map, "growing-up");
+}
+.flaticon-sad:before {
+    content: map-get($flaticon-map, "sad");
+}
+.flaticon-work:before {
+    content: map-get($flaticon-map, "work");
+}
+.flaticon-lavatory:before {
+    content: map-get($flaticon-map, "lavatory");
+}
